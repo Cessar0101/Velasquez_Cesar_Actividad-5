@@ -1,0 +1,333 @@
+body {
+  font-family: Arial, sans-serif;
+
+  /* Color de fondo
+
+  background: linear-gradient(to bottom, #d3d3d3, #fff4f4); Degradado
+  color: #333; Color del texto 
+  
+  */
+  margin: 0;
+  padding: 0;
+}
+
+/* Mover los títulos de los carruseles pequeños a la izquierda */
+.carousel-title {
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-left: 2rem; /* Ajusta el margen izquierdo según sea necesario */
+  font-size: 1.5rem; /* Tamaño de fuente opcional */
+  font-weight: bold; /* Opcional: énfasis en el título */
+  color: #333; /* Ajusta el color según tu diseño */
+}
+
+/* Contenedor para los botones solo de los carruseles pequeños */
+#extraCoversCarousel1 .carousel-controls,
+#extraCoversCarousel2 .carousel-controls,
+#extraCoversCarousel3 .carousel-controls {
+  position: absolute;
+  top: -20%; /* Ajusta según la posición sobre la sexta imagen */
+  right: -1%; /* Alineado hacia la derecha del carrusel */
+  display: flex; /* Alinea los botones horizontalmente */
+  gap: 0rem; /* Espaciado entre los botones */
+  z-index: 3; /* Asegura que los botones estén encima del contenido */
+}
+
+/* Estilo de los botones individuales de los carruseles pequeños */
+#extraCoversCarousel1 .carousel-control-prev,
+#extraCoversCarousel1 .carousel-control-next,
+#extraCoversCarousel2 .carousel-control-prev,
+#extraCoversCarousel2 .carousel-control-next,
+#extraCoversCarousel3 .carousel-control-prev,
+#extraCoversCarousel3 .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro translúcido */
+  border-radius: 100%; /* Forma redonda */
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  position: relative; /* Posicionamiento relativo dentro del contenedor */
+}
+
+/* Personalización para que el botón derecho esté a la derecha */
+#extraCoversCarousel1 .carousel-control-next,
+#extraCoversCarousel2 .carousel-control-next,
+#extraCoversCarousel3 .carousel-control-next {
+  margin-left: 0.5rem; /* Espaciado entre el botón izquierdo y el derecho */
+}
+
+/* Iconos de los botones pequeños */
+#extraCoversCarousel1 .carousel-control-prev-icon,
+#extraCoversCarousel1 .carousel-control-next-icon,
+#extraCoversCarousel2 .carousel-control-prev-icon,
+#extraCoversCarousel2 .carousel-control-next-icon,
+#extraCoversCarousel3 .carousel-control-prev-icon,
+#extraCoversCarousel3 .carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.7); /* Iconos blancos translúcidos */
+  border-radius: 50%;
+}
+
+/* Barra superior dinámica */
+.navbar {
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
+}
+
+
+/* Estilos para mostrar dropdowns al pasar el mouse */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block; /* Muestra el menú */
+  margin-top: 0; /* Asegura que no haya separación extra */
+  
+}
+
+/* Opcional: suavizar la transición */
+.navbar-nav .dropdown-menu {
+  transition: opacity 0.3s ease;
+  opacity: 0; /* Inicialmente oculto */
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  opacity: 1; /* Visible al pasar el mouse */
+}
+
+/* Cambiar color del texto del botón al pasar el mouse o con la lista abierta */
+.navbar-nav .nav-item.dropdown:hover > .nav-link,
+.navbar-nav .nav-item.dropdown.show > .nav-link {
+  color: #ff0000; /* Rojo cuando la lista está abierta o se pasa el mouse */
+}
+
+/* Color normal cuando no hay interacción */
+.navbar-nav .nav-link.dropdown-toggle {
+  color: #ffffff; /* Blanco como color normal */
+  transition: color 0.3s; /* Transición suave del color */
+}
+
+/* Evitar que el color cambie al interactuar con la lista */
+.dropdown-menu:hover {
+  color: inherit; /* No afecta el botón principal */
+}
+
+/* Fondo y color de texto de las listas desplegables */
+.dropdown-menu {
+  background-color: #000000; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+  border: none; /* Elimina los bordes */
+}
+
+/* Color de los elementos individuales dentro del menú */
+.dropdown-item {
+  color: #f8f9fa; /* Texto blanco */
+}
+
+.dropdown-item:hover {
+  background-color: #ffffff; /* Fondo azul al pasar el mouse */
+  color: #ff0000; /* Texto blanco al pasar el mouse */
+}
+
+/* Opcional: Cambiar el color del menú desplegable activo */
+.dropdown-item.active {
+  background-color: #0069d9; /* Fondo azul más oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Agregar triángulos hacia la derecha */
+.dropdown-item::before {
+  content: ''; /* Triángulo vacío */
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre el texto y el triángulo */
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent; /* Triángulo */
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #ffffff; /* Color del triángulo */
+}
+
+/* Cambiar color del triángulo al pasar el mouse */
+.dropdown-item:hover::before {
+  border-left-color: #ff0000; /* Cambia el color del triángulo al pasar el mouse */
+}
+
+/* Ajustar el tamaño del texto */
+.dropdown-item {
+  font-size: 0.880rem; /* Tamaño del texto */
+}
+
+/* Espaciado adicional entre el texto y el triángulo */
+.dropdown-item {
+  padding-left: 10px; /* Espaciado general, si necesitas ajustar */
+}
+
+.img-fluid {
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+#movieCarousel {
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco translúcido */
+  border-radius: 10px; /* Opcional: redondear los bordes */
+  padding: 15px; /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+#movieCarousel .carousel-inner {
+  background-color: transparent; /* Asegura que el contenido interno también sea transparente */
+}
+
+#movieCarousel img {
+  border-radius: 5px; /* Redondea las imágenes para mayor estética */
+}
+
+#movieCarousel h2,
+#movieCarousel p {
+  color: #333; /* Texto en gris oscuro */
+}
+
+#extraCoversCarousel1 {
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco translúcido */
+  border-radius: 10px; /* Opcional: redondear los bordes */
+  padding: 15px; /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+#extraCoversCarousel1 .carousel-inner {
+  background-color: transparent; /* Asegura que el contenido interno también sea transparente */
+}
+
+#extraCoversCarousel1 img {
+  border-radius: 5px; /* Redondea las imágenes para mayor estética */
+}
+
+#extraCoversCarousel1 h2,
+#extraCoversCarousel1 p {
+  color: #333; /* Texto en gris oscuro */
+}
+
+#extraCoversCarousel1 {
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco translúcido */
+  border-radius: 10px; /* Opcional: redondear los bordes */
+  padding: 15px; /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+#extraCoversCarousel1 .carousel-inner {
+  background-color: transparent; /* Asegura que el contenido interno también sea transparente */
+}
+
+#extraCoversCarousel1 img {
+  border-radius: 5px; /* Redondea las imágenes para mayor estética */
+}
+
+#extraCoversCarousel1 h2,
+#extraCoversCarousel1 p {
+  color: #333; /* Texto en gris oscuro */
+}
+
+
+
+#extraCoversCarousel2 {
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco translúcido */
+  border-radius: 10px; /* Opcional: redondear los bordes */
+  padding: 15px; /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+#extraCoversCarousel2 .carousel-inner {
+  background-color: transparent; /* Asegura que el contenido interno también sea transparente */
+}
+
+#extraCoversCarousel2 img {
+  border-radius: 5px; /* Redondea las imágenes para mayor estética */
+}
+
+#extraCoversCarousel2 h2,
+#extraCoversCarousel2 p {
+  color: #333; /* Texto en gris oscuro */
+}
+
+#extraCoversCarousel3 {
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco translúcido */
+  border-radius: 10px; /* Opcional: redondear los bordes */
+  padding: 15px; /* Espaciado interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+#extraCoversCarousel3 .carousel-inner {
+  background-color: transparent; /* Asegura que el contenido interno también sea transparente */
+}
+
+#extraCoversCarousel3 img {
+  border-radius: 5px; /* Redondea las imágenes para mayor estética */
+}
+
+#extraCoversCarousel3 h2,
+#extraCoversCarousel3 p {
+  color: #333; /* Texto en gris oscuro */
+}
+
+
+
+
+/* Estilos del modo oscuro */
+body.dark-mode {
+  background-color: #121212; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+
+.navbar.dark-mode {
+  background-color: #000000; /* Fondo de la barra de navegación oscuro */
+}
+
+.carousel-controls button.dark-mode {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo de botones translúcido */
+}
+
+.carousel-title.dark-mode {
+  color: #ffffff; /* Títulos en blanco */
+}
+
+/* Otros elementos que requieran cambios en modo oscuro */
+footer.dark-mode {
+  background-color: #000000; /* Fondo del pie de página oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+
+
+
+/* Estilo del switch */
+.form-check-input {
+  width: 2.5rem; /* Ancho del interruptor */
+  height: 1.5rem; /* Altura del interruptor */
+  background-color: #ffffff; /* Color gris claro por defecto */
+  border-radius: 1rem; /* Forma redonda */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #1307ff; /* Color amarillo para modo oscuro */
+}
+
+.form-check-input:checked + .form-check-label {
+  color: #ffc107; /* Cambia el color del ícono */
+}
+
+/* Ajustes para el ícono */
+.form-check-label {
+  font-size: 1.2rem; /* Tamaño del ícono */
+  margin-left: 0.5rem; /* Espaciado entre el interruptor y el ícono */
+  transition: color 0.3s ease;
+  cursor: pointer;
+}

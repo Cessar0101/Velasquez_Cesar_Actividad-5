@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Criterion Films</title>
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bg-dark text-white py-3 text-center">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Criterion Collection</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!-- Botón de Géneros -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="genreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Géneros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="genreDropdown">
+                <li><a class="dropdown-item" href="#">Terror</a></li>
+                <li><a class="dropdown-item" href="#">Romance</a></li>
+                <li><a class="dropdown-item" href="#">Comedia</a></li>
+                <li><a class="dropdown-item" href="#">Acción</a></li>
+              </ul>
+            </li>
+    
+            <!-- Botón de Juegos -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Juegos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="gamesDropdown">
+                <li><a class="dropdown-item" href="#">PS1</a></li>
+                <li><a class="dropdown-item" href="#">PS2</a></li>
+                <li><a class="dropdown-item" href="#">PS3</a></li>
+                <li><a class="dropdown-item" href="#">PS4</a></li>
+              </ul>
+            </li>
+    
+            <!-- Botón de Libros -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="booksDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Libros
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="booksDropdown">
+                <li><a class="dropdown-item" href="#">Ficción</a></li>
+                <li><a class="dropdown-item" href="#">No Ficción</a></li>
+                <li><a class="dropdown-item" href="#">Misterio</a></li>
+                <li><a class="dropdown-item" href="#">Fantasía</a></li>
+              </ul>
+            </li>
+    
+            <!-- Botón de Música -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="musicDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Música
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="musicDropdown">
+                <li><a class="dropdown-item" href="#">Rock</a></li>
+                <li><a class="dropdown-item" href="#">Pop</a></li>
+                <li><a class="dropdown-item" href="#">Jazz</a></li>
+                <li><a class="dropdown-item" href="#">Clásica</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="form-check form-switch text-light ms-auto">
+            <input class="form-check-input" type="checkbox" id="darkModeSwitch" aria-label="Modo Oscuro">
+            <label class="form-check-label" for="darkModeSwitch">
+              🌙
+            </label>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  
+  <!-- Carrusel Principal -->
+  <div class="container my-5">
+    <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <img src="img/movie1.jpg" alt="movie1" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-8">
+              <h2>A Woman Under the Influence</h2>
+              <p>Un trabajador tierno pero ignorante trata de apoyar a su esposa y 
+                su lucha con una enfermedad mental.</p>
+              <p><strong>Director:</strong> John Cassavetes</p>
+              <p><strong>Año:</strong> 1974</p>
+              <p><strong>Género:</strong> Drama</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <img src="img/movie2.jpg" alt="movie2" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-8">
+              <h2>Three Colors Red</h2>
+              <p>Una manipulación de una línea telefónica conecta un estudiante sueco de ley,
+                una modelo (Irène Jacob) y un ex juez (Jean-Louis Trintignant) que escucha disimulada.</p>
+              <p><strong>Director:</strong> Krzysztof Kieślowski</p>
+              <p><strong>Año:</strong> 1994</p>
+              <p><strong>Género:</strong> Romance/Misterio</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <img src="img/movie3.jpg" alt="movie2" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-8">
+              <h2>Life Is Sweet</h2>
+              <p>Dos gemelos, con personalidades completamente opuestas, luchan por encontrar su 
+                propia identidad en su excéntrico hogar.</p>
+              <p><strong>Director:</strong> Mike Leigh</p>
+              <p><strong>Año:</strong> 1990</p>
+              <p><strong>Género:</strong> Comedia/Drama</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <img src="img/movie4.jpg" alt="movie2" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-8">
+              <h2>I Am Curious Yellow / Blue</h2>
+              <p>Lena, de veinte años, quiere saber todo lo que pueda sobre la vida y la realidad.
+                Recopila información sobre todos y sobre todo,
+                almacenando sus hallazgos en un enorme archivo.
+                Experimenta con las relaciones, el activismo político y la meditación.</p>
+              <p><strong>Director:</strong> Vilgot Sjöman</p>
+              <p><strong>Año:</strong> 1967</p>
+              <p><strong>Género:</strong> Drama</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <img src="img/movie5.jpg" alt="movie2" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-8">
+              <h2>Europe'51</h2>
+              <p>Una mujer de la alta sociedad afectada por el suicidio de su hijo,
+               trata de escapar de su dolor dedicándose a ayudar a los más necesitados, 
+               y termina por ser arrestada y declarada incapaz por su marido que es embajador.</p>
+              <p><strong>Director:</strong> Roberto Rossellini</p>
+              <p><strong>Año:</strong> 1952</p>
+              <p><strong>Género:</strong> Drama</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Carruseles con hileras de 5 imágenes -->
+  <div class="container my-5">
+    <h2 class="text-left mb-4">Fila 1</h2>
+
+    <!-- Carrusel 1 -->
+    <div id="extraCoversCarousel1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row text-center">
+            <div class="col-2"><img src="img/movie6.jpg" alt="movie3" class="img-fluid rounded shadow"><p>Película 1</p></div>
+            <div class="col-2"><img src="img/movie7.jpg" alt="movie4" class="img-fluid rounded shadow"><p>Película 2</p></div>
+            <div class="col-2"><img src="img/movie8.jpg" alt="movie5" class="img-fluid rounded shadow"><p>Película 3</p></div>
+            <div class="col-2"><img src="img/movie9.jpg" alt="movie3" class="img-fluid rounded shadow"><p>Película 4</p></div>
+            <div class="col-2"><img src="img/movie10.jpg" alt="movie6" class="img-fluid rounded shadow"><p>Película 5</p></div>
+            <div class="col-2"><img src="img/movie11.jpg" alt="movie7" class="img-fluid rounded shadow"><p>Película 6</p></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row text-center">
+            <div class="col-2"><img src="img/movie12.jpg" alt="movie8" class="img-fluid rounded shadow"><p>Película 7</p></div>
+            <div class="col-2"><img src="img/movie13.jpg" alt="movie9" class="img-fluid rounded shadow"><p>Película 8</p></div>
+            <div class="col-2"><img src="img/movie14.jpg" alt="movie9" class="img-fluid rounded shadow"><p>Película 9</p></div>
+            <div class="col-2"><img src="img/movie15.jpg" alt="movie10" class="img-fluid rounded shadow"><p>Película 10</p></div>
+            <div class="col-2"><img src="img/movie16.jpg" alt="movie11" class="img-fluid rounded shadow"><p>Película 11</p></div>
+            <div class="col-2"><img src="img/movie17.jpg" alt="movie12" class="img-fluid rounded shadow"><p>Película 12</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-control-prev" type="button" data-bs-target="#extraCoversCarousel1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#extraCoversCarousel1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+
+    <!-- Carrusel 2 -->
+    <div class="container my-5">
+    <h2 class="text-left mb-4">Fila 2</h2>
+
+    <div id="extraCoversCarousel2" class="carousel slide mt-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row text-center">
+            <div class="col-2"><img src="img/movie18.jpg" alt="movie13" class="img-fluid rounded shadow"><p>Película 13</p></div>
+            <div class="col-2"><img src="img/movie19.jpg" alt="movie14" class="img-fluid rounded shadow"><p>Película 14</p></div>
+            <div class="col-2"><img src="img/movie20.jpg" alt="movie15" class="img-fluid rounded shadow"><p>Película 15</p></div>
+            <div class="col-2"><img src="img/movie21.jpg" alt="movie15" class="img-fluid rounded shadow"><p>Película 16</p></div>
+            <div class="col-2"><img src="img/movie22.jpg" alt="movie16" class="img-fluid rounded shadow"><p>Película 17</p></div>
+            <div class="col-2"><img src="img/movie23.jpg" alt="movie17" class="img-fluid rounded shadow"><p>Película 18</p></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row text-center">
+            <div class="col-2"><img src="img/movie24.jpg" alt="movie18" class="img-fluid rounded shadow"><p>Película 19</p></div>
+            <div class="col-2"><img src="img/movie25.jpg" alt="movie19" class="img-fluid rounded shadow"><p>Película 20</p></div>
+            <div class="col-2"><img src="img/movie26.jpg" alt="movie20" class="img-fluid rounded shadow"><p>Película 21</p></div>
+            <div class="col-2"><img src="img/movie27.jpg" alt="movie15" class="img-fluid rounded shadow"><p>Película 22</p></div>
+            <div class="col-2"><img src="img/movie28.jpg" alt="movie21" class="img-fluid rounded shadow"><p>Película 23</p></div>
+            <div class="col-2"><img src="img/movie29.jpg" alt="movie22" class="img-fluid rounded shadow"><p>Película 24</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-control-prev" type="button" data-bs-target="#extraCoversCarousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#extraCoversCarousel2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h2 class="text-left mb-4">Fila 3</h2>
+    <!-- Aquí se inserta el nuevo carrusel -->
+
+    <div id="extraCoversCarousel3" class="carousel slide mt-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row text-center">
+            <div class="col-2"><img src="img/movie30.jpg" alt="movie23" class="img-fluid rounded shadow"><p>movie23</p></div>
+            <div class="col-2"><img src="img/movie31.jpg" alt="movie24" class="img-fluid rounded shadow"><p>movie24</p></div>
+            <div class="col-2"><img src="img/movie32.jpg" alt="movie25" class="img-fluid rounded shadow"><p>movie25</p></div>
+            <div class="col-2"><img src="img/movie33.jpg" alt="movie25" class="img-fluid rounded shadow"><p>movie25</p></div>
+            <div class="col-2"><img src="img/movie34.jpg" alt="movie26" class="img-fluid rounded shadow"><p>movie26</p></div>
+            <div class="col-2"><img src="img/movie35.jpg" alt="movie27" class="img-fluid rounded shadow"><p>movie27</p></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row text-center">
+            <div class="col-2"><img src="img/movie36.jpg" alt="movie28" class="img-fluid rounded shadow"><p>movie28</p></div>
+            <div class="col-2"><img src="img/movie37.jpg" alt="movie29" class="img-fluid rounded shadow"><p>movie29</p></div>
+            <div class="col-2"><img src="img/movie38.jpg" alt="movie30" class="img-fluid rounded shadow"><p>movie30</p></div>
+            <div class="col-2"><img src="img/movie39.jpg" alt="movie25" class="img-fluid rounded shadow"><p>movie25</p></div>
+            <div class="col-2"><img src="img/movie40.jpg" alt="movie31" class="img-fluid rounded shadow"><p>movie31</p></div>
+            <div class="col-2"><img src="img/movie41.jpg" alt="movie32" class="img-fluid rounded shadow"><p>movie32</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-control-prev" type="button" data-bs-target="#extraCoversCarousel3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#extraCoversCarousel3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+      </div>
+    </div>
+  
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Criterion Films. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="barra.js"></script>
+  <script src="dark.js"></script>
+
+</body>
+</html>
